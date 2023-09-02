@@ -43,8 +43,16 @@ function New({departsDate}){
                     <option value='Southwest'>SouthWest</option>
                     <option value='United'>United</option>
                 </select>
+                Airport: <select style={formSpacing} name='airport'>
+                    <option value=''>Please Choose an Airport</option>
+                    <option value="AUS">AUS</option>
+                    <option value='DAL'>DAL</option>
+                    <option value='LAX'>LAX</option>
+                    <option value='SAN'>SAN</option>
+                    <option value='SEA'>SEA</option>
+                </select>
                 Flight No.: <input style={formSpacing} type='number' name='flightNo' min='10' max='9999' />
-                Departure Date: <input style={formSpacing} type='datetime-local' value={departsDate} name='departs'/>
+                Departure Date: <input style={formSpacing} type='datetime-local' defaultValue={departsDate} name='departs'/>
                 <input style={formSpacing} type='submit' value='Add Flight'/>
             </form>
         </main>

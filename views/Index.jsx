@@ -57,6 +57,7 @@ function Index({flights}){
                                     flight.departs > currentDate ? <td style={tableStyles}>{departDate}</td> : <td style={redText}>{departDate}</td>
                                 }
                                 <td style={tableStyles}>{departureTime}</td>
+                                <td style={tableStyles}><a href={`/flights/${flight.id}`}>Details</a></td>
                             </tr>
                             )
                         })
